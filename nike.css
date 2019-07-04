@@ -1,0 +1,351 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open sans", sans-serif;
+}
+/* header */
+
+#header-container {
+  height: 60px;
+  background: #ecf0f1;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 50px;
+}
+
+#header-container .header-menu a {
+  margin-right: 30px;
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+/* accueil */
+
+#accueil-container {
+  text-align: center;
+  color: #2c3e50;
+}
+
+#accueil-container h1 {
+  font-weight: 800;
+  font-size: 36px;
+  margin-bottom: 0;
+}
+
+#accueil-container h2 {
+  font-weight: 300;
+  font-size: 36px;
+  margin: 0;
+}
+
+/* homme */
+
+#homme-container {
+  height: auto;
+  /* border: 4px solid black; */
+}
+
+#homme-container .homme-blocs {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+#homme-container .homme-blocs div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#homme-container .homme-blocs p {
+  position: absolute;
+  color: white;
+  text-align: center;
+  text-shadow: 0 2px 4px black;
+  transform: translateY(-50%);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#homme-container .homme-blocs .bloc1 {
+  box-shadow: #2c3e50 35px 35px;
+}
+
+#homme-container .homme-blocs .bloc2 {
+  box-shadow: #d1cd63 0 35px;
+}
+
+#homme-container .homme-blocs .bloc3 {
+  box-shadow: #2c3e50 -35px 35px;
+}
+
+/* femme */
+#femme-container {
+  margin-top: 70px;
+  height: 450px;
+  /* border: 4px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#femme-container .femme-texte {
+  height: 405px;
+  background: #2c3e50;
+  transform: translate(-200px, 45px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#femme-container .femme-texte h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #d1cd63;
+  margin: 0;
+}
+
+#femme-container .femme-texte p {
+  width: 70%;
+  color: white;
+  text-align: justify;
+}
+
+/* Enfant  */
+#enfant-container {
+  height: auto;
+
+  position: relative;
+  margin-top: 70px;
+}
+
+#enfant-container .enfant-bouton {
+  width: 150px;
+  height: 150px;
+  background: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#enfant-container .enfant-bouton p {
+  color: white;
+  font-weight: 800;
+  font-size: 24px;
+  margin: 0;
+}
+
+#enfant-container .enfant-bouton img {
+  width: 50%;
+}
+#enfant-container img {
+  display: block;
+  width: 100%;
+}
+
+/* footer */
+
+#footer-container {
+  margin-top: 70px;
+  height: 60px;
+  background: #ecf0f1;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px 0 50px;
+}
+
+#footer-container .footer-reseaux img {
+  margin-right: 25px;
+}
+
+@media screen and (max-width: 850px) {
+  /* accueil */
+
+  #accueil-container {
+    text-align: center;
+    color: #2c3e50;
+  }
+
+  #accueil-container h1 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+
+  #accueil-container h2 {
+    font-weight: 300;
+    font-size: 24px;
+    margin: 0;
+  }
+
+  #accueil-container img {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 380px;
+    height: 254px;
+    left: 100px;
+  }
+
+  /* homme */
+
+  #homme-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  #homme-container .homme-blocs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #homme-container .homme-blocs div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px;
+  }
+
+  #homme-container .homme-blocs .bloc1 {
+    box-shadow: #2c3e50 0px 10px;
+  }
+
+  #homme-container .homme-blocs .bloc2 {
+    box-shadow: #d1cd63 0 10px;
+  }
+
+  #homme-container .homme-blocs .bloc3 {
+    box-shadow: #2c3e50 0px 10px;
+  }
+
+  /* femme */
+  #femme-container {
+    height: auto;
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  #femme-container .femme-texte {
+    height: auto;
+    position: relative;
+    width: auto;
+    background: #2c3e50;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #femme-container .femme-texte h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d1cd63;
+    margin: 0;
+    text-align: justify;
+    position: relative;
+    left: 100px;
+  }
+
+  #femme-container .femme-texte p {
+    width: 40%;
+    color: white;
+    text-align: justify;
+    position: relative;
+    left: 100px;
+  }
+
+  /* Enfant  */
+  #enfant-container {
+    height: auto;
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #enfant-container .enfant-bouton {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #2c3e50;
+  }
+
+  #enfant-container .enfant-bouton img {
+    width: 10%;
+    position: relative;
+    display: flex;
+    right: 100px;
+  }
+
+  #enfant-container .enfant-bouton p {
+    color: white;
+    font-weight: bold;
+    position: relative;
+    font-size: 24px;
+    right: 100px;
+  }
+
+  #enfant-container img {
+    width: 0px;
+    margin: 0px;
+  }
+
+  /* footer */
+
+  #footer-container {
+    margin-top: 70px;
+    height: auto;
+    background: #ecf0f1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /* header */
+
+  #header-container {
+    height: auto;
+    background: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #header-container .header-menu a {
+    margin-right: 0;
+    text-decoration: none;
+    color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 0;
+  }
+}
